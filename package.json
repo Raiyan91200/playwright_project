@@ -1,0 +1,17 @@
+{
+  "name": "playwright_project",
+  "version": "1.0.0",
+  "description": "Ostad Project Task ",
+  "license": "ISC",
+  "author": "Raiyan Nasim",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "Q1": "npx playwright test tests/specs/loginAccount.spec.js --headed",
+    "Q2": "npx playwright test tests/specs/successfulOrder.spec.js --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.2"
+  }
+}
