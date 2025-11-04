@@ -19,6 +19,10 @@ test.describe("Add to cart and checkout then logout Make a Happy Path", () => {
         await login.enterPassword("secret_sauce");
         await login.clickLogin();
     });
+    test("Reset App State", async () => {
+        await main.clickHamburgerMenu();
+        await main.clickResetBtn();
+    });
     test("Add items to cart", async () => {
         await main.clickAddToCartBtn(generator.getUniqueRandom());
         await main.clickAddToCartBtn(generator.getUniqueRandom());

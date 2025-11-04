@@ -25,6 +25,12 @@ export default class mainpage {
     async clickAddToCartBtn(index) {
         return this.page.locator(`//div[@data-test="inventory-list"]//div[@data-test="inventory-item"][${index}]//button[text()="Add to cart"]`).click(); // i could not find a way to use the locator from mainpageLocator.js here
     }
+    async clickfilterDropdown() {
+        await this.mainpageLocator.filterDropdown.click();
+    }
+    async selectFilterZtoA() {
+        await this.mainpageLocator.filterDropdown.selectOption('za');
+    }
     async clickCartBtn() {
         await this.mainpageLocator.cartBtn.click();
     }

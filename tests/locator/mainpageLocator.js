@@ -14,6 +14,9 @@ export default class mainpageLocator {
         this.finishBtn = this.page.locator('//button[@id="finish"]');
         this.orderConfirmationMessage = this.page.locator('//h2[@class="complete-header"]');
         this.logoutBtn = this.page.locator('//a[@id="logout_sidebar_link"]');
+        this.filterDropdown = this.page.locator('//select[@data-test="product-sort-container"]');
+        //this.selectZtoAOption = this.page.locator('//option[@value="za"]');
+        
     }
 
     
