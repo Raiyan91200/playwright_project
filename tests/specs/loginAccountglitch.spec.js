@@ -23,7 +23,6 @@ test.describe("Login with glitch user account  ", () => {
         await main.clickResetBtn();
     });
     test("Verify Filter Z to A", async () => {
-        await page.pause();
         await main.clickfilterDropdown();
         await main.selectFilterZtoA();
     });
