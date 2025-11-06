@@ -37,7 +37,7 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'https://www.saucedemo.com/',
     video: 'retain-on-failure', // or 'on' for all tests, 'off', 'first-retry'
-    screenshot: 'only-on-failure', // or 'on', 'off'
+    screenshot: 'on', // or 'on', 'off'
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
