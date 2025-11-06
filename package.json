@@ -9,7 +9,8 @@
   "scripts": {
     "Q1": "npx playwright test tests/specs/loginAccount.spec.js --headed",
     "Q2": "npx playwright test tests/specs/successfulOrder.spec.js --headed",
-    "Q3": "npx playwright test tests/specs/loginAccountglitch.spec.js --headed"
+    "Q3": "npx playwright test tests/specs/loginAccountglitch.spec.js --headed",
+    "full-test": "npx playwright test --headed && npx allure generate allure-results --clean -o allure-report && npx allure open allure-report"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.1",
