@@ -4,7 +4,7 @@ import UniqueRandomGenerator from "../utils/utils";
 import { test, expect } from "@playwright/test";
 
 test.describe.configure({ mode: "serial" });
-test.describe("Add to cart and checkout then logout Make a Happy Path", () => {
+test.describe("Q2 Add to cart and checkout then logout Make a Happy Path", () => {
     let login, main, page, context;
     let generator = new UniqueRandomGenerator(1, 6);
     test.beforeAll(async ({ browser }) => {

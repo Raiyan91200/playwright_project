@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 import mainpage from "../pages/mainpage";
 
 test.describe.configure({ mode:"serial" });
-test.describe("Login with glitch user account  ", () => {
+test.describe("Q3 Login with glitch user account  ", () => {
     let login, main, page, context, name1, name2, name3, price1, price2, price3, taxText, totalText;
     test.beforeAll(async ({ browser }) => {
         context = await browser.newContext();

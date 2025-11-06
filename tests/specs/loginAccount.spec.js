@@ -1,7 +1,7 @@
 import loginPage from "../pages/login"; 
 import { test, expect } from "@playwright/test";
 test.describe.configure({ mode:"serial" });
-test.describe("Login to the account ", () => {
+test.describe("Q1 Login to the account ", () => {
     let login,page,context;
     test.beforeAll(async ({ browser }) => {
         context = await browser.newContext();
